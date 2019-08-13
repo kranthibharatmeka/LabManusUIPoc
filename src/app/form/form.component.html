@@ -1,0 +1,22 @@
+<div class= "container">
+  <div class="form-outlet">
+    <div class="col-sm-6">
+      <form [formGroup]="dynamicForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Field Name</label>
+            <input id="fieldName" class="form-control" formControlName="fieldName"></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Field Type</label>
+              <input id="fieldType" class="form-control" formControlName="fieldType">
+            </div>
+          </div>
+          <div class="form-row">
+              <button type="submit" class="btn btn-lg btn-primary" (click)="submitForm(dynamicForm.value)"> Submit</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
